@@ -1,0 +1,61 @@
+<view class="shell">
+  <view class="result-wrap card">
+    <view class="result-layout">
+
+      <!-- 顶部：海报 + 类型信息 -->
+      <view class="result-top">
+        <!-- 海报图 -->
+        <view class="poster-box">
+          <view class="poster-circle"></view>
+          <image
+            wx:if="{{posterImage}}"
+            class="poster-image"
+            src="{{posterImage}}"
+            mode="aspectFit"
+          />
+          <text class="poster-caption">{{posterCaption}}</text>
+        </view>
+
+        <!-- 类型信息 -->
+        <view class="type-box">
+          <text class="type-kicker">{{modeKicker}}</text>
+          <view class="type-name">{{typeName}}</view>
+          <view class="match-badge">{{badge}}</view>
+          <text class="type-sub">{{typeSub}}</text>
+        </view>
+      </view>
+
+      <!-- 简单解读 -->
+      <view class="analysis-box">
+        <text class="section-title">该人格的简单解读</text>
+        <text class="analysis-text">{{desc}}</text>
+      </view>
+
+      <!-- 十五维度评分 -->
+      <view class="dim-box">
+        <text class="section-title">十五维度评分</text>
+        <view class="dim-list">
+          <view class="dim-item" wx:for="{{dimList}}" wx:key="name">
+            <view class="dim-item-top">
+              <text class="dim-item-name">{{item.name}}</text>
+              <text class="dim-item-score">{{item.level}} / {{item.score}}分</text>
+            </view>
+            <text class="dim-item-desc">{{item.explanation}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 友情提示 -->
+      <view class="note-box">
+        <text class="section-title">友情提示</text>
+        <text class="note-text">{{funNote}}</text>
+      </view>
+    </view>
+
+    <!-- 底部操作 -->
+    <view class="result-actions">
+      <button class="btn-secondary" bindtap="onRestart">重新测试</button>
+      <button class="btn-primary" bindtap="onBackHome">回到首页</button>
+    </view>
+  </view>
+</view>

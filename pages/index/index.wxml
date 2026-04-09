@@ -1,0 +1,12 @@
+<view class="shell">
+  <view class="hero card">
+    <!-- 装饰圆形 -->
+    <view class="hero-circle"></view>
+
+    <view class="hero-title">MBTI已经过时，SBTI来了。</view>
+
+    <view class="hero-actions">
+      <button class="btn-primary" bindtap="onStart">开始测试</button>
+    </view>
+  </view>
+</view>

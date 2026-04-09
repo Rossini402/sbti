@@ -1,0 +1,54 @@
+.shell {
+  max-width: 980rpx;
+  margin: 0 auto;
+  padding: 48rpx 32rpx 112rpx;
+}
+
+.hero {
+  padding: 84rpx 40rpx;
+  margin-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-circle {
+  position: absolute;
+  right: -120rpx;
+  top: -120rpx;
+  width: 360rpx;
+  height: 360rpx;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(127, 165, 134, 0.18), rgba(127, 165, 134, 0.02));
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: 64rpx;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.hero-actions {
+  margin-top: 56rpx;
+}
+
+.hero-info {
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.info-line {
+  font-size: 26rpx;
+  color: var(--muted);
+  line-height: 1.8;
+}

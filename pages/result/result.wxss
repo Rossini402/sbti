@@ -1,0 +1,248 @@
+.shell {
+  max-width: 980rpx;
+  margin: 0 auto;
+  padding: 48rpx 32rpx 112rpx;
+}
+
+.result-wrap {
+  padding: 44rpx;
+}
+
+.result-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 36rpx;
+}
+
+/* 顶部两栏 */
+.result-top {
+  display: flex;
+  flex-direction: column;
+  gap: 36rpx;
+}
+
+/* 海报盒子 */
+.poster-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  padding: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #f7fbf8);
+  overflow: hidden;
+  position: relative;
+}
+
+.poster-circle {
+  position: absolute;
+  right: -92rpx;
+  bottom: -92rpx;
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(127, 165, 134, 0.12), rgba(127, 165, 134, 0.01));
+  pointer-events: none;
+}
+
+.poster-image {
+  width: 100%;
+  min-height: 400rpx;
+  max-height: 800rpx;
+  border-radius: 36rpx;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.poster-caption {
+  display: block;
+  margin-top: 28rpx;
+  color: var(--muted);
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+/* 类型信息 */
+.type-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  padding: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+}
+
+.type-kicker {
+  font-size: 24rpx;
+  color: var(--accent-strong);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.type-name {
+  font-size: 56rpx;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.match-badge {
+  margin-top: 36rpx;
+  display: inline-flex;
+  align-items: center;
+  gap: 16rpx;
+  border-radius: 999rpx;
+  padding: 20rpx 28rpx;
+  background: var(--soft);
+  border: 2rpx solid var(--line);
+  color: var(--accent-strong);
+  font-weight: 700;
+  font-size: 26rpx;
+  line-height: 1.4;
+}
+
+.type-sub {
+  display: block;
+  margin-top: 36rpx;
+  color: var(--muted);
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+/* 通用 section */
+.section-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 24rpx;
+  color: var(--text);
+}
+
+/* 解读区 */
+.analysis-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  padding: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+}
+
+.analysis-text {
+  color: #304034;
+  font-size: 30rpx;
+  line-height: 1.9;
+}
+
+/* 维度区 */
+.dim-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  padding: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+}
+
+.dim-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.dim-item {
+  border: 2rpx solid var(--line);
+  border-radius: 32rpx;
+  padding: 28rpx;
+  background: #fff;
+}
+
+.dim-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20rpx;
+  margin-bottom: 16rpx;
+  flex-wrap: wrap;
+}
+
+.dim-item-name {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dim-item-score {
+  color: var(--accent-strong);
+  font-weight: 800;
+  font-size: 28rpx;
+  white-space: nowrap;
+}
+
+.dim-item-desc {
+  color: var(--muted);
+  font-size: 26rpx;
+  line-height: 1.8;
+}
+
+/* 提示区 */
+.note-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  padding: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+}
+
+.note-text {
+  color: var(--muted);
+  font-size: 26rpx;
+  line-height: 1.8;
+}
+
+/* 作者折叠 */
+.author-box {
+  border: 2rpx solid var(--line);
+  border-radius: 36rpx;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+  overflow: hidden;
+}
+
+.author-summary {
+  padding: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24rpx;
+}
+
+.author-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.author-toggle-btn {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: var(--accent-strong);
+  border: 2rpx solid var(--line);
+  background: var(--soft);
+  padding: 12rpx 20rpx;
+  border-radius: 999rpx;
+  flex-shrink: 0;
+}
+
+.author-content {
+  border-top: 2rpx solid var(--line);
+  padding: 0 36rpx 36rpx;
+}
+
+.author-text {
+  display: block;
+  margin-top: 28rpx;
+  color: #304034;
+  font-size: 28rpx;
+  line-height: 1.9;
+}
+
+/* 底部按钮 */
+.result-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24rpx;
+  flex-wrap: wrap;
+  margin-top: 44rpx;
+}
