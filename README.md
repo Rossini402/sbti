@@ -1,5 +1,9 @@
 # SBTI 人格测试 - 微信小程序版
 
+<img src="images/wx.jpg" width="200" alt="微信二维码" />
+
+添加微信可以加入 AI 资讯、实践交流群
+
 > MBTI 已经过时，SBTI 来了。
 
 1:1 复刻 [sbti.unun.dev](https://sbti.unun.dev/) 的 SBTI 人格测试，原生微信小程序实现。
